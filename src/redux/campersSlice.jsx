@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchCampers } from "./operations";
 
 const campersInitialstate = {
-    campers: [],
+    campersItems: [],
     isLoading: false,
   error: null,
 };
@@ -18,7 +18,7 @@ const campersSlise = createSlice ({
         .addCase(fetchCampers.fulfilled, (state, action) => {
             state.isLoading = false;
             state.error = null;
-            state.campers = action.payload;
+            state.campersItems = action.payload;
         })
         .addCase(fetchCampers.rejected, (state, action) => {
             state.isLoading = false;
