@@ -50,3 +50,7 @@ export const Description = styled.p`
   text-align: justify;
   
 `
+
+export const Item = styled.li`
+margin-bottom: 24px;
+`

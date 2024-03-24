@@ -20,7 +20,10 @@ export const App = () => {
         <Route path = "features" element = {<Features/>}/>
         <Route path = "reviews" element = {<Reviews/>}/>
       </Route>
-      <Route path="favorites" element={<FavoritesPage/>}/>
+      <Route path="/favorites" element={<FavoritesPage/>}>
+      <Route path = "features" element = {<Features/>}/>
+        <Route path = "reviews" element = {<Reviews/>}/>
+      </Route>
       <Route path="*" element={<HomePage/>} />
       </Route>
     </Routes>
