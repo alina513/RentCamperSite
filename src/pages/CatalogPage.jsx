@@ -35,7 +35,7 @@ export default function CatalogPage() {
         padding: '40px',
       }}
     >
-      <Toaster/>
+      <Toaster />
       <Filter />
       <div
         style={{
@@ -46,12 +46,12 @@ export default function CatalogPage() {
         }}
       >
         {isLoading && !error && <Loader />}
-        {campers.length !== 0 &&(
+        {campers.length !== 0 && (
           <>
             <CampersList />
             {currentLimit <= 12 && <LoadMore handleLoadMore={handleLoadMore} />}
           </>
-        ) }
+        )}
       </div>
     </div>
   );

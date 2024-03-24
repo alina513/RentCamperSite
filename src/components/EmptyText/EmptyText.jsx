@@ -1,8 +1,8 @@
-import { Container, Text } from "./EmptyText.styled"
+import { Container, Text } from './EmptyText.styled';
 export const Empty = () => {
-    return(
-        <Container>
-            <Text>You Favorite list is empty</Text>
-        </Container>
-    )
-}
+  return (
+    <Container>
+      <Text>You Favorite list is empty</Text>
+    </Container>
+  );
+};

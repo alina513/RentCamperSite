@@ -24,10 +24,9 @@ import { Outlet } from 'react-router-dom';
 import sprite from '../../sprite.svg';
 
 export const Modal = ({ value, closeModal, closeModalOverlay }) => {
-
   const [activeLink, setActiveLink] = useState(null);
 
-  const handleLinkClick = (link) => {
+  const handleLinkClick = link => {
     setActiveLink(link);
   };
 
@@ -84,11 +83,31 @@ export const Modal = ({ value, closeModal, closeModalOverlay }) => {
         </List>
         <Description>{value.description}</Description>
         <NavContainer>
-          <Link to="features" onClick={() => handleLinkClick('features')} className={activeLink === 'features' ? 'active' : ''}>Features</Link>
-          <Link to="reviews" onClick={() => handleLinkClick('reviews')} className={activeLink === 'reviews' ? 'active' : ''}>Reviews</Link>
+          <Link
+            to="features"
+            onClick={() => handleLinkClick('features')}
+            className={activeLink === 'features' ? 'active' : ''}
+          >
+            Features
+          </Link>
+          <Link
+            to="reviews"
+            onClick={() => handleLinkClick('reviews')}
+            className={activeLink === 'reviews' ? 'active' : ''}
+          >
+            Reviews
+          </Link>
         </NavContainer>
         <Line />
-        <LineRed className={activeLink === 'features' ? 'all' : activeLink === 'reviews' ? 'red' : ''}/>
+        <LineRed
+          className={
+            activeLink === 'features'
+              ? 'all'
+              : activeLink === 'reviews'
+              ? 'red'
+              : ''
+          }
+        />
         <Outlet />
       </ModalWindow>
     </Overlay>

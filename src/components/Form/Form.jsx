@@ -1,7 +1,16 @@
 import * as Yup from 'yup';
 import { Formik, Form } from 'formik';
-import { Message, Container, Button, Title, Text, Field, DateWrapper, Svg } from './Form.styled';
-import sprite from '../../sprite.svg'
+import {
+  Message,
+  Container,
+  Button,
+  Title,
+  Text,
+  Field,
+  DateWrapper,
+  Svg,
+} from './Form.styled';
+import sprite from '../../sprite.svg';
 const formSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Name must be at least 2 characters')
@@ -36,18 +45,34 @@ export const FormModal = () => {
       >
         {({ errors, touched }) => (
           <Form>
-            <Field id="name" name="name" placeholder="Name" $variant="all"/>
+            <Field id="name" name="name" placeholder="Name" $variant="all" />
             {touched.name && errors.name && <Message>{errors.name}</Message>}
-            <Field id="email" name="email" placeholder="Email" type="email" $variant="all"/>
+            <Field
+              id="email"
+              name="email"
+              placeholder="Email"
+              type="email"
+              $variant="all"
+            />
             {touched.email && errors.email && <Message>{errors.email}</Message>}
             <DateWrapper>
-              <Field id="date" name="date" placeholder="Booking date" $variant="all"/>
+              <Field
+                id="date"
+                name="date"
+                placeholder="Booking date"
+                $variant="all"
+              />
               {touched.date && errors.date && <Message>{errors.date}</Message>}
               <Svg>
                 <use xlinkHref={sprite + '#icon-date'}></use>
               </Svg>
             </DateWrapper>
-            <Field id="comment" name="comment" placeholder="Comment" $variant="last" />
+            <Field
+              id="comment"
+              name="comment"
+              placeholder="Comment"
+              $variant="last"
+            />
             <Button type="submit">Send</Button>
           </Form>
         )}

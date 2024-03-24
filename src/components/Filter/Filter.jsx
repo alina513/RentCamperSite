@@ -1,4 +1,3 @@
-
 import {
   Name,
   Inside,
@@ -17,22 +16,20 @@ import {
   Svg,
   Buton,
   Icon,
-} from "./Filter.styled";
+} from './Filter.styled';
 
-import sprite from "../../sprite.svg";
+import sprite from '../../sprite.svg';
 
 export const Filter = () => {
-  
-
   return (
     <>
       <div>
         <LocationWrapper>
-        <Location>
-      <use xlinkHref={sprite + "#location"}></use>
-    </Location>
+          <Location>
+            <use xlinkHref={sprite + '#location'}></use>
+          </Location>
           <Label>Location</Label>
-          <Input type="text" placeholder="Kyiv, Ukraine"/>
+          <Input type="text" placeholder="Kyiv, Ukraine" />
         </LocationWrapper>
 
         <Filters>Filters</Filters>
@@ -40,47 +37,47 @@ export const Filter = () => {
         <div>
           <Title>Vehicle equipment</Title>
           <LineSvg>
-      <use xlinkHref={sprite + "#icon-line"}></use>
-    </LineSvg>
+            <use xlinkHref={sprite + '#icon-line'}></use>
+          </LineSvg>
           <List>
             <Item>
               <Inside>
-              <Icon>
-      <use xlinkHref={sprite + "#icon-AC"}></use>
-    </Icon>
-                
+                <Icon>
+                  <use xlinkHref={sprite + '#icon-AC'}></use>
+                </Icon>
+
                 <Name>AC</Name>
               </Inside>
             </Item>
             <Item>
               <Inside>
-              <Icon>
-      <use xlinkHref={sprite + "#icon-transmission-2"}></use>
-    </Icon>
+                <Icon>
+                  <use xlinkHref={sprite + '#icon-transmission-2'}></use>
+                </Icon>
                 <Name>Automatic</Name>
               </Inside>
             </Item>
             <Item>
               <Inside>
-              <Icon>
-      <use xlinkHref={sprite + "#icon-kitchen-2"}></use>
-    </Icon>
+                <Icon>
+                  <use xlinkHref={sprite + '#icon-kitchen-2'}></use>
+                </Icon>
                 <Name>Kitchen</Name>
               </Inside>
             </Item>
             <Item>
               <Inside>
-              <Icon>
-      <use xlinkHref={sprite + "#icon-TV"}></use>
-    </Icon>
+                <Icon>
+                  <use xlinkHref={sprite + '#icon-TV'}></use>
+                </Icon>
                 <Name>TV</Name>
               </Inside>
             </Item>
             <Item>
               <Inside>
-              <Icon>
-      <use xlinkHref={sprite + "#icon-shower"}></use>
-    </Icon>
+                <Icon>
+                  <use xlinkHref={sprite + '#icon-shower'}></use>
+                </Icon>
 
                 <Name>Shower/WC</Name>
               </Inside>
@@ -90,25 +87,25 @@ export const Filter = () => {
         <div>
           <Title>Vehicle type</Title>
           <LineSvg>
-      <use xlinkHref={sprite + "#icon-line"}></use>
-    </LineSvg>
+            <use xlinkHref={sprite + '#icon-line'}></use>
+          </LineSvg>
           <VehicleList>
             <Type>
-            <Svg>
-      <use xlinkHref={sprite + "#icon-camper-3"}></use>
-    </Svg>
+              <Svg>
+                <use xlinkHref={sprite + '#icon-camper-3'}></use>
+              </Svg>
               <VehicleName>Van</VehicleName>
             </Type>
             <Type>
-            <Svg>
-      <use xlinkHref={sprite + "#icon-camper-2"}></use>
-    </Svg>
+              <Svg>
+                <use xlinkHref={sprite + '#icon-camper-2'}></use>
+              </Svg>
               <VehicleName>Fully Integrated</VehicleName>
             </Type>
             <Type>
-            <Svg>
-      <use xlinkHref={sprite + "#icon-camper-1"}></use>
-    </Svg>
+              <Svg>
+                <use xlinkHref={sprite + '#icon-camper-1'}></use>
+              </Svg>
               <VehicleName>Alcove</VehicleName>
             </Type>
           </VehicleList>

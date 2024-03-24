@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-
+import styled from 'styled-components';
 
 export const Label = styled.label`
   font-weight: 500;
@@ -8,8 +6,6 @@ export const Label = styled.label`
   line-height: 1.5;
   color: rgba(16, 24, 40, 0.6);
 `;
-
-
 
 export const Location = styled.svg`
   width: 18px;
@@ -34,16 +30,15 @@ export const Filters = styled.p`
   line-height: 1.5;
   margin-bottom: 14px;
 
-  color: ${(p) => p.theme.colors.black};
+  color: ${p => p.theme.colors.black};
 `;
 
 export const Title = styled.h2`
   font-size: 20px;
   line-height: 1.2;
 
-  color: ${(p) => p.theme.colors.black};
+  color: ${p => p.theme.colors.black};
 `;
-
 
 export const List = styled.ul`
   width: 360px;
@@ -80,9 +75,9 @@ export const Input = styled.input`
   font-size: 16px;
   line-height: 1.25;
 
-  color: ${(p) => p.theme.colors.black};
+  color: ${p => p.theme.colors.black};
 
-  background-color: ${(p) => p.theme.colors.inputs};
+  background-color: ${p => p.theme.colors.inputs};
 `;
 
 export const LineSvg = styled.svg`
@@ -108,13 +103,12 @@ export const Icon = styled.svg`
   height: 32px;
 `;
 
-
 export const VehicleName = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
 
-  color: ${(p) => p.theme.colors.black};
+  color: ${p => p.theme.colors.black};
 `;
 
 export const Svg = styled.svg`
@@ -125,7 +119,7 @@ export const Svg = styled.svg`
 export const Buton = styled.button`
   display: block;
   padding: 16px 60px;
-  background-color: ${(p) => p.theme.colors.red};
+  background-color: ${p => p.theme.colors.red};
   color: #ffffff;
   border: none;
   border-radius: 200px;
@@ -135,14 +129,13 @@ export const Buton = styled.button`
   line-height: 1.5;
   letter-spacing: -0.01em;
 
-  transition: background-color ${(p) => p.theme.transition};
+  transition: background-color ${p => p.theme.transition};
 
   &:hover,
   :focus {
     background-color: #d84343;
   }
 `;
-
 
 export const VehicleList = styled.ul`
   display: flex;

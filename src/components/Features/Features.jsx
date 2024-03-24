@@ -11,7 +11,7 @@ import {
   WrapperButton,
   Svg,
   ItemIcon,
-  Text
+  Text,
 } from './Features.styled';
 import sprite from '../../sprite.svg';
 

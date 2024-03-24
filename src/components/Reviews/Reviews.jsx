@@ -1,6 +1,6 @@
 import { selectModal } from '../../redux/selectors';
 import { useSelector } from 'react-redux';
-import sprite from "../../sprite.svg";
+import sprite from '../../sprite.svg';
 import {
   Container,
   WrapperBar,
@@ -12,13 +12,12 @@ import {
   Description,
   Item,
   Svg,
-  Stars
+  Stars,
 } from './Reviews.styled';
 import { FormModal } from '../Form/Form';
 import { nanoid } from 'nanoid';
 
 export const Reviews = () => {
-
   const Rating = ({ rating }) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {

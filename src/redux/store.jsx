@@ -6,7 +6,6 @@ import { modalReducer } from "./modalSlice";
 export const store = configureStore({
     reducer: {
         campers: campersReduser,
-        // filters: ,
         modal: modalReducer,
     }
 })
