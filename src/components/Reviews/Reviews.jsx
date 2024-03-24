@@ -19,19 +19,6 @@ import { nanoid } from 'nanoid';
 
 export const Reviews = () => {
 
-
-  const YellowStar = (
-    <Svg>
-      <use xlinkHref={sprite + '#icon-star'}></use>
-    </Svg>
-  );
-  
-  const GreyStar = (
-    <Svg>
-      <use xlinkHref={sprite + '#icon-star-grey'}></use>
-    </Svg>
-  );
-
   const Rating = ({ rating }) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {
