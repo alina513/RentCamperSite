@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/camper/static/css/main.4f6165c2.css",
-    "main.js": "/camper/static/js/main.cad09c40.js",
+    "main.js": "/camper/static/js/main.ea8c5602.js",
     "static/js/158.eeaadcea.chunk.js": "/camper/static/js/158.eeaadcea.chunk.js",
-    "static/js/775.a3a54126.chunk.js": "/camper/static/js/775.a3a54126.chunk.js",
-    "static/js/820.8fbfedd3.chunk.js": "/camper/static/js/820.8fbfedd3.chunk.js",
+    "static/js/775.31984766.chunk.js": "/camper/static/js/775.31984766.chunk.js",
+    "static/js/820.4af5013f.chunk.js": "/camper/static/js/820.4af5013f.chunk.js",
     "static/media/sprite.svg": "/camper/static/media/sprite.3c1a211a375998bc5e9937a6a6c88198.svg",
     "index.html": "/camper/index.html",
     "main.4f6165c2.css.map": "/camper/static/css/main.4f6165c2.css.map",
-    "main.cad09c40.js.map": "/camper/static/js/main.cad09c40.js.map",
+    "main.ea8c5602.js.map": "/camper/static/js/main.ea8c5602.js.map",
     "158.eeaadcea.chunk.js.map": "/camper/static/js/158.eeaadcea.chunk.js.map",
-    "775.a3a54126.chunk.js.map": "/camper/static/js/775.a3a54126.chunk.js.map",
-    "820.8fbfedd3.chunk.js.map": "/camper/static/js/820.8fbfedd3.chunk.js.map"
+    "775.31984766.chunk.js.map": "/camper/static/js/775.31984766.chunk.js.map",
+    "820.4af5013f.chunk.js.map": "/camper/static/js/820.4af5013f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f6165c2.css",
-    "static/js/main.cad09c40.js"
+    "static/js/main.ea8c5602.js"
   ]
 }
