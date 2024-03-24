@@ -54,3 +54,12 @@ export const Description = styled.p`
 export const Item = styled.li`
 margin-bottom: 24px;
 `
+export const Svg = styled.svg`
+width: 20px;
+height: 20px;
+`
+
+export const Stars = styled.div`
+  display: flex;
+  gap: 2px;
+`;
