@@ -3,7 +3,7 @@ import { useEffect} from "react";
 import { useState } from "react"; 
 export default function FavoritesPage() {
     const [favorites, setFavorites] = useState([]);
-    const [favoritesChanged, setFavoritesChanged] = useState(false);
+    // const [favoritesChanged, setFavoritesChanged] = useState(false);
 
     
 

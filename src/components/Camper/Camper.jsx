@@ -35,7 +35,7 @@ export const Camper = ({ value }) => {
     const storedItems = JSON.parse(localStorage.getItem('storedItems')) || [];
     const itemIndex = storedItems.findIndex(item => item._id === value._id);
     if (itemIndex!== -1) {
-      {setIsFavorite(true);}
+      setIsFavorite(true);
     }
     return
   }
@@ -49,7 +49,7 @@ export const Camper = ({ value }) => {
   };
 
   const closeModal = event => {
-    {setIsModalOpen(false);}
+    setIsModalOpen(false);
   };
 
   const closeModalOverlay = event => {
