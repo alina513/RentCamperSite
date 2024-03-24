@@ -41,7 +41,7 @@ export const Camper = ({ value }) => {
   }
   useEffect(() => {
     isFav()
-  },[])
+  },)
 
   const openModal = () => {
     setIsModalOpen(true);

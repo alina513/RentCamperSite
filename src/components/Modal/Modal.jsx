@@ -34,7 +34,7 @@ export const Modal = ({ value, closeModal, closeModalOverlay }) => {
     return () => {
       document.removeEventListener('keydown', handleEscapeKey);
     };
-  }, []);
+  }, );
 
   return (
     <Overlay onClick={closeModalOverlay}>
