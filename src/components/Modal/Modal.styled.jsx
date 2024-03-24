@@ -1,6 +1,17 @@
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
+const getByLink = props => {
+  switch (props.className) {
+    case 'all':
+    return "0px";
+    case "red":
+      return "100px";
+      default:
+        return '0px';
+  }
+}
+
 export const ModalWindow = styled.div`
 display: block;
 width: 982px;
@@ -130,23 +141,6 @@ line-heigt: 150%;
 color: ${(p)=> p.theme.colors.black};
 `
 
-// export const Line = styled.div`
-//   width: 982px;
-//   height: 1px;
-//   margin-top: 24px;
-//   margin-bottom: 24px;
-//   background-color: ${(p) => p.theme.colors.grey};
-// `;
-
-// export const LineRed = styled.div`
-//   width: 85px;
-//   height: 1px;
-//   margin-top: 0px;
-//   padding: 0px;
-//   margin-bottom: 0px;
-//   background-color: ${(p) => p.theme.colors.red};
-// `;
-
 
 export const Line = styled.div`
   height: 1px;
@@ -159,6 +153,7 @@ export const LineRed = styled.div`
   height: 1px;
   background-color: red; 
   margin-top: -2px; 
+  margin-left: ${getByLink}; 
   width: 85px;
  
 `;

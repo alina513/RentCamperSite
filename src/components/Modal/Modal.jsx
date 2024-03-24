@@ -17,13 +17,20 @@ import {
   CloseBtn,
   NavContainer,
   Line,
-  LineRed
+  LineRed,
 } from './Modal.styled';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import sprite from '../../sprite.svg';
 
 export const Modal = ({ value, closeModal, closeModalOverlay }) => {
+
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
   const handleEscapeKey = event => {
     if (event.key === 'Escape') {
       closeModal();
@@ -34,7 +41,7 @@ export const Modal = ({ value, closeModal, closeModalOverlay }) => {
     return () => {
       document.removeEventListener('keydown', handleEscapeKey);
     };
-  }, );
+  });
 
   return (
     <Overlay onClick={closeModalOverlay}>
@@ -77,11 +84,11 @@ export const Modal = ({ value, closeModal, closeModalOverlay }) => {
         </List>
         <Description>{value.description}</Description>
         <NavContainer>
-        <Link to="features">Features</Link>
-        <Link to="reviews">Reviews</Link>
+          <Link to="features" onClick={() => handleLinkClick('features')} className={activeLink === 'features' ? 'active' : ''}>Features</Link>
+          <Link to="reviews" onClick={() => handleLinkClick('reviews')} className={activeLink === 'reviews' ? 'active' : ''}>Reviews</Link>
         </NavContainer>
-        <Line/>
-        <LineRed/>
+        <Line />
+        <LineRed className={activeLink === 'features' ? 'all' : activeLink === 'reviews' ? 'red' : ''}/>
         <Outlet />
       </ModalWindow>
     </Overlay>
