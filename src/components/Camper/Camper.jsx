@@ -2,7 +2,6 @@ import { Element } from './Camper.styled';
 import { Photo } from './Camper.styled';
 import { Modal } from '../Modal/Modal';
 import { useState } from 'react';
-import { toggleFavorite } from '../../redux/campersSlice';
 import {
   ButtonHeart,
   WrapperHeart,
