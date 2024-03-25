@@ -2,6 +2,7 @@ import { Element } from './Camper.styled';
 import { Photo } from './Camper.styled';
 import { Modal } from '../Modal/Modal';
 import { useState } from 'react';
+import { toggleFavorite } from '../../redux/campersSlice';
 import {
   ButtonHeart,
   WrapperHeart,
@@ -30,6 +31,7 @@ export const Camper = ({ value }) => {
   const dispatch = useDispatch();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
+
 
   const isFav = ()=>{
     const storedItems = JSON.parse(localStorage.getItem('storedItems')) || [];
@@ -79,9 +81,6 @@ export const Camper = ({ value }) => {
     localStorage.setItem('storedItems', JSON.stringify(storedItems));
 };
   
-  // const handleButtonClick = () => {
-  //   toggleItemInLocalStorage('item-to-toggle');
-  // };
 
   return (
     <Element>

@@ -5,18 +5,24 @@ import { Empty } from '../components/EmptyText/EmptyText';
 
 export default function FavoritesPage() {
   const [favorites, setFavorites] = useState([]);
-
+ 
   useEffect(() => {
     const fetchDataFromLocalStorage = () => {
       const storedItems = JSON.parse(localStorage.getItem('storedItems')) || [];
       setFavorites(storedItems);
     };
     fetchDataFromLocalStorage();
-  }, []);
+  }, [favorites]);
 
   return (
-    <>{favorites.length!==0 ? (
-      <FavoriteList favorites={favorites} />): (<Empty></Empty>)}
+    <>
+      {favorites.length !== 0 ? (
+        <FavoriteList favorites={favorites} />
+      ) : (
+        <Empty></Empty>
+      )}
     </>
   );
 }
+
+
