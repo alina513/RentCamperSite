@@ -90,7 +90,7 @@ export const Camper = ({ value }) => {
           <Title>{value.name}</Title>
           <WrapperHeart>
           <Price>€{value.price.toFixed(2)}</Price>
-          <ButtonHeart onClick={toggleItemInLocalStorage}><Svg>
+          <ButtonHeart type='submit' onClick={toggleItemInLocalStorage}><Svg>
               <use xlinkHref={sprite + (isFavorite ?'#icon-Property-1pressed' :'#icon-heart')}></use>
             </Svg></ButtonHeart>
           </WrapperHeart>
